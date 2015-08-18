@@ -1,0 +1,15 @@
+{
+  "family": [
+    {
+      "name": "Taylor Miley",
+      "age": 25,
+      "gender": "male",
+      "skills": [
+        "swimming",
+        "gaming",
+        "whining",
+        "eating"
+      ]
+    }
+  ]
+}
