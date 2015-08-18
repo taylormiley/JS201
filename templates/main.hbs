@@ -1,6 +1,10 @@
 {{#each this}}
-  <div>{{name}}</div>
-  <div>{{gender}}</div>
-  <div>{{age}}</div>
-  <div>{{skills}}</div>
+  <div data-key='{{@key}}'>
+    <div><b>{{name}}</b></div>
+    <div>{{gender}}</div>
+    <div>{{age}}</div>
+    <div>{{#each skills}} {{this}}{{/each}}</div>
+    <button type="button" id="deleteButton">Delete</button>
+  </div>
+  
 {{/each}}

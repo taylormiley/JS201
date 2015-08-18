@@ -9,7 +9,23 @@
   <link rel="stylesheet" type="text/css" href="css/main.css"> 
 </head>
 <body>
-  <div id="family-list">
+  <div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="add-family-member">
+      <div class="input-group">
+          <input type="text" id="nameInput" class="form-control" placeholder="Add Name" aria-describedby="basic-addon1">
+          <input type="text" id="ageInput" class="form-control" placeholder="Age" aria-describedby="basic-addon1">
+          <input type="text" id="skillsInput" class="form-control" placeholder="Skill, skill, skill..." aria-describedby="basic-addon1">
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="radioMale" value="Male">Male
+          </label> 
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="radioFemale" value="Female">Female
+          </label>
+          <button type="button" id="addFamilyButton" class="addFamilyButton">Add Member!</button>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="family-list">
+    </div>
   </div>
 <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
 </body>
